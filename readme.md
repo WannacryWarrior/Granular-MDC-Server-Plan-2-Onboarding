@@ -58,12 +58,12 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 
 1. Download,execute and authenicate [AZVM_Tagger.ps1](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1)
 
-2. The Script will prompt for a *Subscription ID*. Supply the Subscription ID where your Machines are located. The script will then output all Resources found in the subscription :
+2. The Script will prompt for a Subscription ID. Supply the **_Subscription ID_** where your Machines are located. The script will then output all Resources found in the subscription :
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture10.png)
 
-3. The script will prompt for the _Tag Name_ , and _tag value_ : I used the below values :
+3. The script will prompt for the **_Tag Name_* , and **_tag value_** : I used the below values :  
  Name : **_MDC Server Plan 2_**  
- Value : **_Disabled_**  
+ Value : **_Disabled_**   
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture14.png)  
 
 4. Confirm the machines in subscription are tagged.
