@@ -78,10 +78,10 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 4. The script will now ask for the Tag Name and Tag Value. **_Supply the values that was used in step 1.3_** and press Enter.
 ![ResourceLevelPricingAtScale.ps1 - Tag Mode ](Screenshots/Picture16.png)
 4. As per the above screenshot, The script will return the servers found with the Tag Name and Values supplied in the previous step. **_Review and confirm the Machines_** in the list and then press any key to continue.
-5. The script will now move to Configuration mode, where it will prompt you to provide the configuration option for the servers in scope, specify **"Free"** and press Enter.  (This option will explicitly define "MDC Server Plan - Disabled").
+5. The script will now move to Configuration mode, where it will prompt you to provide the configuration option for the servers in scope, specify **"Free"** and press Enter.  (This option will explicitly define "Defender for Cloud Server Plans - Disabled").
 ![ResourceLevelPricingAtScale.ps1 - Tag Mode ](Screenshots/Picture17.png)
 
-(Once the above steps are complete, you have explicitly set  Defender for Cloud server Plans, to Disabled, on the Resource Level, for all Machines in the supplied Subscription ID **This overrides ANY Defender for Cloud Server Plan settings defined on the subscription level**.)
+(Once the above steps are complete, you have explicitly set Defender for Cloud server Plans, to Disabled, on the Resource Level, for all Machines in the supplied Subscription ID **This overrides ANY Defender for Cloud Server Plan settings defined on the subscription level**.)
 
 ## Step 3: Enable Defender for Cloud Server - Plan 2 on the Subscription
 
@@ -101,8 +101,9 @@ You can use a powershell script or Rest API call to automate this, for the sake 
 ![Screenshot:ResourceLevelPricingAtScale.ps1 - Subscription ID](Screenshots/Picture15.png)
 3. The script will now ask which Mode to use for Targetting, type **_TAG_** ,and press Enter 
 
-4. Again, the script will now ask for the Tag Name and Tag Value. Supply the same **_Tag Name_** that was defined in step 1.3.  
-This Time , when the script prompts for a **Tag Value , supply the new Value : "Enabled"**
+4. Again, the script will now ask for the Tag Name and Tag Value.  
+   For  **_Tag Name_** Supply the same **_Tag Name that was defined in step 1.3_**.  
+   For  **_Tag Value_** , supply the **_new Value : "Enabled"_** (This value was created in Step 4)
 ![ResourceLevelPricingAtScale.ps1 - Tag Mode ](Screenshots/Picture20.png)
 4. Again, as per the above screenshot, The script will return the servers found with the Tag Name and Value's supplied in the previous step. Review and confirm the Machines in the list and then press any key to continue. Confirm that the machines in the output are the machines were Server - Plan 2 needs to be enabled, and press any key to proceed  
 5. The script will now move to Configuration mode, where it will prompt you to provide the configuration option for the servers in scope, specify **_"Delete"_** and press Enter.  
