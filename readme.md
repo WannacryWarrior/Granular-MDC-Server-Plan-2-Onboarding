@@ -46,13 +46,13 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 ## Prerequisites
 
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
-- [AZVM_Tagger.ps1]()
+- [AZVM_Tagger.ps1](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/AZVM_Tagger.ps1)
 - Start with Defender for Cloud - Server plan 2 in a Disabled/Off state, on the subscription in scope
 - The Subscription ID of the Subscription in scope
 
 ## Step 1: Create tag values and apply to machines
 
-1. Download,execute and authenicate [AZVM_Tagger.ps1]():  
+1. Download,execute and authenicate [AZVM_Tagger.ps1](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/AZVM_Tagger.ps1):  
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture1.png)
 
 2. The Script will prompt for a *Subscription ID*. Supply the Subscription ID where your Machines are located. The script will then output all Resources found in the subscription :
