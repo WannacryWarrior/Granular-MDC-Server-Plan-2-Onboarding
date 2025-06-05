@@ -92,7 +92,7 @@ You can use a powershell script or Rest API call to automate this, for the sake 
 
 ![Azure Portal - Update Tag](Screenshots/Picture18.png)
 
-## Step 5:Remove the "Disable Defender for Cloud Server plans" Config for Machines with the "Enabled" Tag Value
+## Step 5: Remove the "Disable Defender for Cloud Server plans" Config for Machines with the "Enabled" Tag Value
 
 1. Once again, run the [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1) and authenicate if prompted. 
 
