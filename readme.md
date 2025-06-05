@@ -1,5 +1,12 @@
 # Granular Defender for Cloud - Server Plan 2 Onboarding
 
+
+
+<p align="center">
+  <img src="https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Screenshots/diagram-export-6-5-2025-5_33_52-PM.png?raw
+
+![solution Diagram](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Screenshots/diagram-export-6-5-2025-5_33_52-PM.png?)  
+
 Granularly enable Defender for CLoud Server - Plan 2 on a Resource (Per-Machine) Level for a given Azure subsciption. This could be useful for scenarios such as, Server Plan 2 POC or, a Server Plan 2 Pilot Phase, where the deployment scope should be limited to only a subset of resources.
 
 ## Table of Contents
