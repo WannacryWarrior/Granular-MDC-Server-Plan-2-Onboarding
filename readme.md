@@ -44,7 +44,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 ## Important Considerations 
 
 - Once steps 1 - 6 have been completed, **all new Machines onboarded/created to the subscription in scope will be automatically onboarded to Defender for Cloud - Server Plan 2**, as it will apply the Defender for Cloud Server - Plan 2 config defined at the subscription level.  
-- It's important to remember that the "secret sauce" here is that the resource level config overrides the Subscription level config. Any new machine introduced into the Subscription will not have this configuration defined (Step 1 and Step 2). 
+- It's important to remember that the "secret sauce" here is that the **resource level config overrides the Subscription level config**. Any new machine introduced into the Subscription will not have this configuration defined (Step 1 and Step 2) and thus will inherit the config defined at the subscription, which is "Defender for Cloud Server - Plan 2" set to  "Enabled"
 
 ## Prerequisites
 
