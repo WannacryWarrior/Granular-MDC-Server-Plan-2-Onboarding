@@ -1,22 +1,25 @@
 # Granular Defender for Cloud - Server Plan 2 Onboarding
 
-_The purpose of this document is to serve as a guide on how to granularly enable Server - Plan 2 on a Resource (Per-Machine)   Level for a given Azure subsciption_ This is usefull for a POC or Pilot Phase. 
+Granularly enable Defender for CLoud Server - Plan 2 on a Resource (Per-Machine) Level for a given Azure subsciption. This could be useful for scenarios such as, Server Plan 2 POC or, a Server Plan 2 Pilot Phase, where the deployment scope should be limited to only a subset of resources.
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Step 1: Description of Step 1](#step-1-description-of-step-1)
-4. [Step 2: Description of Step 2](#step-2-description-of-step-2)
-5. [Step 3: Description of Step 3](#step-3-description-of-step-3)
-6. [Troubleshooting](#troubleshooting)
-7. [FAQ](#faq)
-8. [References](#references)
+[Introduction](#introduction)  
+[Prerequisites](#prerequisites)  
+[Step 1: Create Tag values and apply to machines](#step-1-apply-tags-to-all-vmarcvmss-in-a-subscription)  
+[Step 2: Apply "Disable Defender for Cloud Server - plan" Config](#step-2-apply-disable-defender-for-cloud-server-plans-config-for-all-servers-with-the-tag--created-in-step-1-)
+[Step 3: Enable Server - Plan 2 on the Subscription](#step-3-enable-server---plan-2-on-the-subscription)  
+[Step 4: Update the Tag Value from "Disabled" to "Enabled" for the Machines that require Server - Plan 2](#step-4-update-the-tag-value-from-disabled-to-enabled-for-the-machines-that-require-server---plan-2)  
+[Step 5: Update the Tag Value from "Disabled" to "Enabled" for the Machines that require Server - Plan 2](#step-5-update-the-tag-value-from-disabled-to-enabled-for-the-machines-that-require-server---plan-2)  
+[Step 6: Validate Granular onboarding](#step-6-validate-granular-onboarding)  
+[Troubleshooting](#troubleshooting)  
+[FAQ](#faq)  
+[References](#references)
 
 ---
 ## Introduction
 
-Initially, Microsoft  provided the ability to Enable the Defender For Cloud Server Plans at Subscription level only, which takes an "all or nothing approach to Workload protection for Machines within a given subscription.
+Initially, Microsoft provided the ability to Enable the Defender For Cloud - Server Plans at Subscription level only, which takes an "all or nothing approach to Workload protection for Machines within a given subscription.
 Subsequently, Microsoft has introduced “some” additional Deployment options documented here : [Decide on Deployment Scope](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan#decide-on-deployment-scope) . 
 
 Microsoft specifically calls out some noteworthy statements in the deployment scope options URL mentioned above :
@@ -36,14 +39,13 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
 - Azure Policy [_Configure Azure Defender for Servers to be disabled for resources (resource level) with the selected tag_](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F080fedce-9d4a-4d07-abf0-9f036afbc9c8) **Not covered in this Guide!**
 
-
 ## Prerequisites
 
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
 - [AZVM_Tagger.ps1]()
+- Start with Defender for Cloud - Server plan 2 in a Disabled/Off state, on the subscription
 
-
-## Step 1: Apply Tags to All Resources (VM/ARC/VMSS) in a Subscription
+## Step 1:Create Tag values and apply to machines
 
 1. Download,execute and authenicate [AZVM_Tagger.ps1]() :
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture1.png)
@@ -111,7 +113,7 @@ _Common issues and how to resolve them._
 
 ## FAQ
 
-_Frequently asked questions and answers._
+[Look here](https://learn.microsoft.com/en-us/azure/defender-for-cloud/faq-defender-for-servers)
 
 ## References
 
