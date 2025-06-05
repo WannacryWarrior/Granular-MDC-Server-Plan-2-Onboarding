@@ -4,17 +4,17 @@ Granularly enable Defender for CLoud Server - Plan 2 on a Resource (Per-Machine)
 
 ## Table of Contents
 
-[Introduction](#introduction)  
-[Prerequisites](#prerequisites)
-[Step 1: Create Tag values and apply to machines](#step-1-apply-tags-to-all-vmarcvmss-in-a-subscription)
-[Step 2: Apply "Disable Defender for Cloud Server - plan" Config](#step-2-apply-disable-defender-for-cloud-server-plans-config-for-all-servers-with-the-tag--created-in-step-1-)  
-[Step 3: Enable Server - Plan 2 on the Subscription](#step-3-enable-server---plan-2-on-the-subscription)  
-[Step 4: Update the Tag Value from "Disabled" to "Enabled" for the Machines that require Server - Plan 2](#step-4-update-the-tag-value-from-disabled-to-enabled-for-the-machines-that-require-server---plan-2)  
-[Step 5: Remove the "Disable Defender for Cloud Server plans" Config for Machines with the "Enabled" Tag Value](#step-5remove-the-disable-defender-for-cloud-server-plans-config-for-machines-with-the-enabled-tag-value)  
-[Step 6: Validate Granular onboarding](#step-6-validate-granular-onboarding)  
-[Troubleshooting](#troubleshooting)  
-[FAQ](#faq)  
-[References](#references)
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Step 1: Create tag values and apply to machines](#step-1-create-tag-values-and-apply-to-machines)
+- [Step 2: Apply "Disable Defender for Cloud Server - plan" Config](#step-2-apply-disable-defender-for-cloud-server---plan-config)
+- [Step 3: Enable Defender for Cloud Server - Plan 2 on the Subscription](#step-3-enable-defender-for-cloud-server---plan-2-on-the-subscription)
+- [Step 4: Update the Tag Value from "Disabled" to "Enabled" for machines that require Server - Plan 2 to be Enabled](#step-4-update-the-tag-value-from-disabled-to-enabled-for-machines-that-require-server---plan-2-to-be-enabled)
+- [Step 5: Remove the "Disable Defender for Cloud Server plans" Config for Machines with the "Enabled" Tag Value](#step-5remove-the-disable-defender-for-cloud-server-plans-config-for-machines-with-the-enabled-tag-value)
+- [Step 6: Validate Granular onboarding](#step-6-validate-granular-onboarding)
+- [Troubleshooting](#troubleshooting)
+- [FAQ](#faq)
+- [References](#references)
 
 ---
 ## Introduction
@@ -37,7 +37,11 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 - [Azure Tags](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) 
 
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
-- Azure Policy [_Configure Azure Defender for Servers to be disabled for resources (resource level) with the selected tag_](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F080fedce-9d4a-4d07-abf0-9f036afbc9c8) **Not covered in this Guide!**
+- Azure Policy [_Configure Azure Defender for Servers to be disabled for resources (resource level) with the selected tag_](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F080fedce-9d4a-4d07-abf0-9f036afbc9c8) **Not covered in this Guide!**  
+
+## Important Considerations 
+
+- Once steps 1 - 6 have been completed, **all new Machines onboarded/created in the subscription in scope will automatically be automatically onboarded to Defender for Cloud - Server Plan 2**, as it will apply the Defender for Cloud Server - Plan 2 config defined at the subscription level.  
 
 ## Prerequisites
 
@@ -46,7 +50,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 - Start with Defender for Cloud - Server plan 2 in a Disabled/Off state, on the subscription in scope
 - The Subscription ID of the Subscription in scope
 
-## Step 1:Create Tag values and apply to machines
+## Step 1: Create tag values and apply to machines
 
 1. Download,execute and authenicate [AZVM_Tagger.ps1]():  
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture1.png)
@@ -61,7 +65,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 
 4. Confirm the machines in subscription are tagged.
 
-## Step 2: Apply "Disable Defender for Cloud Server plans" Config for all servers with the Tag ( created in step 1 )  
+## Step 2: Apply "Disable Defender for Cloud Server - plan" Config 
 
 1. Run the [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1) and authenicate if prompted. 
 
@@ -76,12 +80,12 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 
 (Once the above steps are complete, you have explicitly set  Defender for Cloud server Plans, to Disabled, on the Resource Level, for all Machines in the supplied Subscription ID **This overrides ANY Defender for Cloud Server Plan settings defined on the subscription level**.)
 
-## Step 3: Enable Server - Plan 2 on the Subscription 
+## Step 3: Enable Defender for Cloud Server - Plan 2 on the Subscription
 
 For the Subscription that was supplied in Step 1 and Step 2, follow the Defender for Cloud - Server Plan 2 enablement steps outlined here : [Deploy Defender for Servers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/tutorial-enable-servers-plan#enable-on-azure-aws-or-gcp)
 
-## Step 4: Update the Tag Value from "Disabled" to "Enabled" for the Machines that require Server - Plan 2 
-
+## Step 4: Update the Tag Value from "Disabled" to "Enabled" for machines that require Server - Plan 2 to be Enabled
+ 
 You can use a powershell script or Rest API call to automate this, for the sake of simplicity the modification was performed using the Portal : 
 
 ![Azure Portal - Update Tag](Screenshots/Picture18.png)
