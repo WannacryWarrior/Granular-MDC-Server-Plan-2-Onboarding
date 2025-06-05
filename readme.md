@@ -55,8 +55,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1
 ## Step 1: Create tag values and apply to machines
 
-1. Download,execute and authenicate [AZVM_Tagger.ps1](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/AZVM_Tagger.ps1):  
-![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture1.png)
+1. Download,execute and authenicate [AZVM_Tagger.ps1](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1)
 
 2. The Script will prompt for a *Subscription ID*. Supply the Subscription ID where your Machines are located. The script will then output all Resources found in the subscription :
 ![Screenshot:AzVM_Tagger.ps1 Logon](Screenshots/Picture10.png)
