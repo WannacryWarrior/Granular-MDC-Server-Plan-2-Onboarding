@@ -7,6 +7,7 @@ Granularly enable Defender for Cloud Server - Plan 2 on a Resource (Per-Machine)
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Important Considerations](#important-considerations)
 - [Prerequisites](#prerequisites)
 - [Step 1: Create tag values and apply to machines](#step-1-create-tag-values-and-apply-to-machines)
 - [Step 2: Apply "Disable Defender for Cloud Server - plan" Config](#step-2-apply-disable-defender-for-cloud-server---plan-config)
