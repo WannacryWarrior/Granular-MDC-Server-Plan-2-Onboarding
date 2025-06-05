@@ -43,7 +43,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 
 ## Important Considerations 
 
-- Once steps 1 - 6 have been completed, **all new Machines onboarded/created in the subscription in scope will automatically be automatically onboarded to Defender for Cloud - Server Plan 2**, as it will apply the Defender for Cloud Server - Plan 2 config defined at the subscription level.  
+- Once steps 1 - 6 have been completed, **all new Machines onboarded/created to the subscription in scope will be automatically onboarded to Defender for Cloud - Server Plan 2**, as it will apply the Defender for Cloud Server - Plan 2 config defined at the subscription level.  
 
 ## Prerequisites
 
