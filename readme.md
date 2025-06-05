@@ -40,7 +40,7 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 - [Azure Tags](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) 
 
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
-- Azure Policy [_Configure Azure Defender for Servers to be disabled for resources (resource level) with the selected tag_](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F080fedce-9d4a-4d07-abf0-9f036afbc9c8) **Not covered in this Guide, but would be the better route for scaling over mutliple subscriptions**
+- Azure Policy [_Configure Azure Defender for Servers to be disabled for resources (resource level) with the selected tag_](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F080fedce-9d4a-4d07-abf0-9f036afbc9c8) **Not covered in this Guide, but would be the better for scaling over mutliple subscriptions, instead of rerunning the script manually**
 
 ## Important Considerations 
 
