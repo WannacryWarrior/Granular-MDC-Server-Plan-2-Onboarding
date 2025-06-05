@@ -1,4 +1,4 @@
-# Granularly Enable to Defender for Cloud - Server Plan 2
+# Granularly Enable Defender for Cloud - Server Plan 2
 
 ![solution Diagram](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Screenshots/Picture0.png?)  
 
