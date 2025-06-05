@@ -2,7 +2,7 @@
 
 ![solution Diagram](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Screenshots/Picture0.png?)  
 
-Granularly enable Defender for Cloud Server - Plan 2 on a Resource (Per-Machine) Level for a given Azure subsciption. This could be useful for scenarios such as, Server Plan 2 POC or, a Server Plan 2 Pilot Phase, where the deployment scope should be limited to only a subset of resources.
+Granularly enable Defender for Cloud Server - Plan 2 on a Resource (Per-Machine) Level for a given Azure subsciption. This could be useful for scenarios such as, Server Plan 2 POC or, a Server Plan 2 pilot phase, where the deployment scope should be limited to only a subset of resources.
 
 ## Table of Contents
 
@@ -21,8 +21,8 @@ Granularly enable Defender for Cloud Server - Plan 2 on a Resource (Per-Machine)
 ---
 ## Introduction
 
-Initially, Microsoft provided the ability to Enable the Defender For Cloud - Server Plans at Subscription level only, which takes an "all or nothing" approach to Workload protection for Machines within a given subscription.
-Subsequently, Microsoft has introduced “some” additional Deployment options documented here : [Decide on Deployment Scope](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan#decide-on-deployment-scope) . 
+Initially, Microsoft provided the ability to Enable the Defender For Cloud - Server Plans, at Subscription level only, which takes an "all or nothing" approach to Workload protection for Machines within a given subscription.
+Subsequently, Microsoft has introduced “some” additional deployment options documented here : [Decide on Deployment Scope](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan#decide-on-deployment-scope) . 
 
 Microsoft specifically calls out some noteworthy statements in the deployment scope options URL mentioned above :
 
