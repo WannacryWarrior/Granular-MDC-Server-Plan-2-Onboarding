@@ -21,7 +21,7 @@ Granularly enable Defender for CLoud Server - Plan 2 on a Resource (Per-Machine)
 ---
 ## Introduction
 
-Initially, Microsoft provided the ability to Enable the Defender For Cloud - Server Plans at Subscription level only, which takes an "all or nothing approach to Workload protection for Machines within a given subscription.
+Initially, Microsoft provided the ability to Enable the Defender For Cloud - Server Plans at Subscription level only, which takes an "all or nothing" approach to Workload protection for Machines within a given subscription.
 Subsequently, Microsoft has introduced “some” additional Deployment options documented here : [Decide on Deployment Scope](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan#decide-on-deployment-scope) . 
 
 Microsoft specifically calls out some noteworthy statements in the deployment scope options URL mentioned above :
