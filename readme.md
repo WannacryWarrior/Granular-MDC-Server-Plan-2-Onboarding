@@ -105,7 +105,7 @@ You can use a powershell script or Rest API call to automate this, for the sake 
    For  **_Tag Name_** Supply the same **_Tag Name that was defined in step 1.3_**.  
    For  **_Tag Value_** , supply the **_new Value : "Enabled"_** (This value was created in Step 4)
 ![ResourceLevelPricingAtScale.ps1 - Tag Mode ](Screenshots/Picture20.png)
-4. Again, as per the above screenshot, The script will return the servers found with the Tag Name and Value's supplied in the previous step. Review and confirm the Machines in the list and then press any key to continue. Confirm that the machines in the output are the machines were Server - Plan 2 needs to be enabled, and press any key to proceed  
+4. Again, as per the above screenshot, The script will return the servers found with the Tag Name and Value's supplied in the previous step. Review and confirm the Machines in the list and then press any key to continue. Confirm that the machines in the output are the machines where Server - Plan 2 needs to be enabled, and press any key to proceed  
 5. The script will now move to Configuration mode, where it will prompt you to provide the configuration option for the servers in scope, specify **_"Delete"_** and press Enter.  
 ( This option will Delete any explicitly defined configuration and the Machine will inherit configuration from the subscription" ).
 ![ResourceLevelPricingAtScale.ps1 - Tag Mode ](Screenshots/Picture21.png)
