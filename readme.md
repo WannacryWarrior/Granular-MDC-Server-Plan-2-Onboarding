@@ -52,8 +52,8 @@ This allows customers the ability to **Granularly apply Server - Plan 2 ,** by u
 - [Defender for Servers activation on resource level script](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Powershell%20scripts/Defender%20for%20Servers%20on%20resource%20level/ResourceLevelPricingAtScale.ps1)
 - [AZVM_Tagger.ps1](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1)
 - Start with Defender for Cloud - Server plan 2 in a Disabled/Off state, on the subscription in scope
-- The Subscription ID of the Subscription in scope
-https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1
+- The _Subscription ID_ of the Subscription in scope
+
 ## Step 1: Create tag values and apply to machines
 
 1. Download,execute and authenicate [AZVM_Tagger.ps1](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Scripts/AzVM_Tagger.ps1)
