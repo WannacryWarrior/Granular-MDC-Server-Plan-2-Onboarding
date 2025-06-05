@@ -1,4 +1,4 @@
-# Granular Defender for Cloud - Server Plan 2 Onboarding
+# Granularly Onboard to Defender for Cloud - Server Plan 2 
 
 ![solution Diagram](https://github.com/WannacryWarrior/Granular-MDC-Server-Plan-2-Onboarding/blob/main/Screenshots/Picture0.png?)  
 
